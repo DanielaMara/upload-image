@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>City</h2>
+
+<form>
+    <input type="text" name="name" id="name" placeholder="Nome" /><br /><br />
+    <input type="text" name="description" id="description" placeholder="Descrição" /><br /><br />
+    <input type="file" name="file" id="file" /><br /><br />
+
+    <input type="submit" name="send" id="send" value="Enviar " />
+</form>
+
+<div>
+    <h1>Base64 encoded version</h1>
+    <textarea id="base64textarea" placeholder="Base64 will appear here" cols="50" rows="15"></textarea>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="Scripts/City.js"></script>    
+}
